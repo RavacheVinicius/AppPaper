@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Image } from "react-native";
 export const home = () => (
   <View>
     <Text style={styles.titulo}>Boas vindas</Text>
-    <Text style={styles.description}>meu cantor favorito e o Seu Jorge</Text>
+    <Text style={styles.description}>Seu Jorge</Text>
     <View style={styles.top}>
       <Image
         source={{
