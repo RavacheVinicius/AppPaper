@@ -1,7 +1,9 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { albun } from "../screens/Albuns";
+import { Biografia } from "../screens/Biografia";
 import { home } from "../screens/Home";
+import { Noticias } from "../screens/Noticias";
 
 //const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -34,7 +36,7 @@ export const RootNavigation = () => {
       />
       <Tab.Screen
         name="Noticias"
-        component={home}
+        component={Noticias}
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="newspaper-variant-multiple" color={color} size={26} />
@@ -43,7 +45,7 @@ export const RootNavigation = () => {
       />
       <Tab.Screen
         name="Sobre"
-        component={home}
+        component={Biografia}
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="information-outline" color={color} size={26} />
